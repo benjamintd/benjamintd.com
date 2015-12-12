@@ -89,7 +89,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #2F4F4F;
+    color: #00616a;
 }
 
 .navbar-custom .nav li a {
@@ -100,7 +100,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: #000;
+    color: #1d9b6c;
     background-color: transparent;
 }
 
@@ -115,7 +115,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: #fff;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -261,6 +261,11 @@ a:focus {
     padding-top: 40px;
 }
 
+.container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -296,17 +301,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #00616a;
+    color: #00616a;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #1d9b6c;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #1d9b6c;
 }
 
 ul.banner-social-buttons {
@@ -368,6 +373,17 @@ body {
     text-transform:none;
 }
 
+.hobbies .img-responsive{
+    padding: 0px 45px 25px 45px;
+}
+
+.hobbies-heading{
+    margin-bottom: 20px;
+}
+
+.with-subtitle{
+    margin-bottom: 10px;
+}
 
 .timeline{
 list-style:none;
@@ -377,11 +393,11 @@ position:relative
 
 .timeline:before{
     top:0;
-    bottom:120px;
+    bottom:200px;
     position:absolute;
     content:"";
     width:2px;
-    background-color:#f1f1f1;
+    background-color:#ff9200;
     left:40px;
     margin-left:-1.5px
 }
@@ -430,10 +446,10 @@ position:relative
     height:80px;
     position:absolute;
     z-index:100;
-    background-color:#fed136;
-    color:#fff;
+    background-color:#fff;
+    color:#ff9200;
     border-radius:100%;
-    border:7px solid #f1f1f1;
+    border:7px solid #ff9200;
     text-align:center
 }
 

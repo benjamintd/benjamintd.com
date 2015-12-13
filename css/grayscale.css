@@ -32,14 +32,14 @@ h6 {
 
 p {
     margin: 0 0 12px;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.2;
 }
 
 @media(min-width:768px) {
     p {
         margin: 0 0 20px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.2;
     }
 }
@@ -374,7 +374,7 @@ body {
 }
 
 .hobbies .img-responsive{
-    padding: 0px 45px 25px 45px;
+    padding: 0px 60px 25px 60px;
 }
 
 .hobbies-heading{

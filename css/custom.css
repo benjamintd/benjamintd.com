@@ -381,19 +381,21 @@ body {
 
 .timeline{
 list-style:none;
-padding:0;
+padding:0 0 30px 0;
 position:relative
 }
 
-.timeline:before{
-    top:0;
-    bottom:15%;
-    position:absolute;
-    content:"";
-    width:2px;
-    background-color:#FF5800;
-    left:40px;
-    margin-left:-1.5px
+@media (min-width:768px){
+    .timeline:before{
+        top:0;
+        bottom:17%;
+        position:absolute;
+        content:"";
+        width:2px;
+        background-color:#FF5800;
+        left:40px;
+        margin-left:-1.5px
+    }
 }
 
 .timeline>li{

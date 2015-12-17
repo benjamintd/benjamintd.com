@@ -4,22 +4,13 @@ email: benjamin.tdm@gmail.com
 description: This is a blog about self-driving cars.
 baseurl: "/blog"
 url: "http://benjamintd.github.io"
-github_username: 
-
-# Site settings
-title: Zetsu
-email: zetsu@domain.com
-description: Um lindo tema feito para jekyll e com o <3
-baseurl: "/zetsu"
-url: "http://nandomoreira.me"
 
 author:
-  name     : 'Benjamin TD'
+  name     : 'BenjaminTD'
   email    : benjamin.tdm@gmail.com
   url      : http://benjamintd.github.io
   facebook : http://facebook.com/benjamin.td
-
-github: https://github.com/benjamintd
+  github   : http://github.com/benjamintd
 
 paginate: 2
 comments: true

@@ -38,7 +38,7 @@
 //
 // Site header
 .header {
-  background: #292929 url(../images/cover.jpg) no-repeat 50% 0px;
+  background: #FFF url(../images/dodecahedron.svg) no-repeat bottom center scroll;
   @include background-size(cover);
   border-bottom: 1px solid $gray-color-light;
   border-top: 3px solid $primary-color;
@@ -49,7 +49,6 @@
   margin-bottom: 30px;
 
   .overlay {
-    background: rgba(#000, .75);
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -58,7 +57,7 @@
   }
 
   a {
-    color: $white-color;
+    color: #000;
   }
 
   @include media-query($on-phone) {
@@ -66,14 +65,14 @@
   }
 
   .txt-center {
-    color: $white-color;
+    color: #000;
     margin-top: 160px;
     font-weight: 300;
   }
 }
 
 .home .header {
-  padding: 260px 0 200px;
+  padding: 50px 0 100px;
 }
 
 //

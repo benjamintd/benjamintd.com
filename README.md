@@ -1,1 +1,1 @@
-This is a personal website, using Bootstrap.
+This is my personal website, using Bootstrap and Jekyll.

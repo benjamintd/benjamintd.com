@@ -230,7 +230,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -247,7 +247,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -577,3 +577,6 @@ ul.tech-list li:hover img {
     -webkit-filter: brightness(130%);
 }
 
+#kmap {
+  height: 500px;
+}

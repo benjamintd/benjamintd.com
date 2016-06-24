@@ -66,6 +66,9 @@
                         <a class="page-scroll" href="#cv">Resume</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -281,12 +284,25 @@
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="kmap">
-    </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section portfolio section-colored">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                </div>
+            </div>
+        </div>
+        <div id="kmap_bay"></div>
+        <!-- If you look carefully, we even get trajectories for the tunnel part. Cool!.-->
+        <p class="legend"> Highway trajectories generated from about 3 months of data from 100 vehicles, with production grade GPS.<br>Interstate 280 and Route 92. San Mateo, CA </p>
+        <div id="kmap_redwood"></div>
+        <!-- At this point the satellite is more off than the map. True story.-->
+        <p class="legend"> Intersection trajectories generated from 3 to 5 traces per lane, with a high accuracy inertial positionning system.<br>Marine Parkway and Bridge Parkway, Redwood City, CA </p>
+    </section>
 
     <!-- Contact Section -->
-    <div class="section-colored">
+    <div>
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -336,13 +352,21 @@
 </body>
 
 <script>
-  var kmap = L.map('kmap', { zoomControl:false, scrollWheelZoom: false }).setView([37.50698536361317, -122.33879327774046], 17);
+  var kmap_bay = L.map('kmap_bay', { zoomControl:false, scrollWheelZoom: false }).setView([37.50698536361317, -122.33879327774046], 17);
   L.tileLayer('https://api.mapbox.com/styles/v1/benjamintd/cio801v48001cbdnjjtu15m9v/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmVuamFtaW50ZCIsImEiOiJjaW83enIwNjYwMnB1dmlsejN6cDBzbm93In0.0ZOGwSLp8OjW6vCaEKYFng', {
     attribution: 'Kinematic Map &copy; <a href="http://exonav.com">ExoNav</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 20,
     minZoom: 10,
-  }).addTo(kmap);
-  kmap.once('focus', function() { kmap.scrollWheelZoom.enable(); });
+  }).addTo(kmap_bay);
+  kmap_bay.once('focus', function() { kmap_bay.scrollWheelZoom.enable(); });
+
+  var kmap_redwood = L.map('kmap_redwood', { zoomControl:false, scrollWheelZoom: false }).setView([37.53088244500205, -122.25751161575319], 20);
+  L.tileLayer('https://api.mapbox.com/styles/v1/benjamintd/cipua2pwm0007bznjtupbeedl/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmVuamFtaW50ZCIsImEiOiJjaW83enIwNjYwMnB1dmlsejN6cDBzbm93In0.0ZOGwSLp8OjW6vCaEKYFng', {
+    attribution: 'Kinematic Map &copy; <a href="http://exonav.com">ExoNav</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 22,
+    minZoom: 10,
+  }).addTo(kmap_redwood);
+  kmap_redwood.once('focus', function() { kmap_redwood.scrollWheelZoom.enable(); });
 </script>
 
 

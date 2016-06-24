@@ -577,6 +577,16 @@ ul.tech-list li:hover img {
     -webkit-filter: brightness(130%);
 }
 
-#kmap {
+#kmap_bay, #kmap_redwood {
   height: 500px;
+  width: 80%;
+  margin: 10px auto 10px auto;
+}
+
+.legend {
+  width: 80%;
+  margin: auto;
+  color: #444444;
+  padding-bottom: 25px;
+  font-size: 0.9em;
 }

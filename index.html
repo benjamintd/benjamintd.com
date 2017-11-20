@@ -4,23 +4,43 @@
 <head>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="description" content="About Benjamin Tran Dinh">
+  <meta name="keywords" content="Benjamin Tran Dinh,Mapbox,Telemetry">
+  <meta name="author" content="Benjamin Tran Dinh">
   <link rel='icon' type='image/png' href='static/favicon.png'>
   <title>benjamintd</title>
 
   <link href='https://api.mapbox.com/mapbox-assembly/v0.18.0/assembly.min.css' rel='stylesheet'>
   <link rel='stylesheet' href='https://use.typekit.net/xvf1xse.css'>
   <script async defer src='https://api.mapbox.com/mapbox-assembly/v0.18.0/assembly.js'></script>
+  <style>
+    body {
+      font-family: museo-sans, sans-serif;
+    }
+
+    .flex-child {
+      max-width: 500px;
+    }
+
+    h1 img, h2 img {
+      height: 0.8em;
+    }
+
+    img {
+      object-fit: cover;
+    }
+    </style>
 </head>
 
-<body class='prose mt36 col--10 col--offl1 col--8-ml col--offl2-ml txt-l-ml' style='font-family:museo-sans,sans-serif;'>
-  <h1><img src='static/wave.png' class='inline align-middle pr24' style='height: 0.8em;'/>hey, I'm benjamin<span class='color-darken50'>td</span></h1>
+<body class='prose mt36 col--10 col--offl1 col--8-ml col--offl2-ml txt-l-ml'>
+  <h1 class='py24'><img src='static/wave.png' class='inline align-middle pr24'/>hey, I'm benjamin<span class='color-darken50'>td</span></h1>
   <p>
     I am a French engineer who likes self-driving cars and hard optimization problems.
     During the day, I work at Mapbox and turn telemetry data into insights and products.
     At night, I climb rocks, make music, or ride my bike.
   </p>
   <p>
-    I like operations research, machine learning, web design, and maps.
+    I'm interested in operations research, machine learning, web design, and maps.
   </p>
   <p>
     <span title='My smallest achievements are: waking up this morning, taking the train on time to work, and not forgetting my lunch box.'>
@@ -33,32 +53,32 @@
     Check out my <a class='link' href='https://benjamintd.github.io/blog'>blog</a>,
     or the <a class='link' href='http://des-humains.benjamintd.com/'>stuff I write in French</a>.
   </p>
-  <div>
+  <div class='py18'>
     <a href='https://github.com/benjamintd'><img class='w24 h24' src='static/github.svg'></img></a>
     <a href='https://instagram.com/_benjamintd'><img class='w24 h24' src='static/instagram.svg'></img></a>
     <a href='mailto:benjamin.tdm@gmail.com'><img class='w24 h24' src='static/email.svg'></img></a>
     <a href='https://twitter.com/_benjamintd'><img class='w24 h24' src='static/twitter.svg'></img></a>
     <a href='https://soundcloud.com/c_d_a'><img class='w24 h24' src='static/soundcloud.svg'></img></a>
   </div>
-  <h2><img src='static/computer.png' class='inline align-middle pr24' style='height: 0.8em;'/>projects</h2>
-  <div class='flex-parent flex-parent--row flex-parent--wrap flex-parent--center-main pb60'>
-    <div class='flex-child px12 mt36 align-center' style='max-width: 420px;'>
+  <h2><img src='static/computer.png' class='inline align-middle pr24'/>projects</h2>
+  <div class='flex-parent flex-parent--column flex-parent--center-cross pb60'>
+    <div class='flex-child px12 mt36 align-center'>
       <a href='https://maps.benjamintd.com/'>
-        <img class='w-full' style='object-fit: cover;'  src='static/mapbox-maps.png' />
+        <img class='w-full' src='static/mapbox-maps.png' />
       </a>
       <h3>Mapbox Maps</h3>
       <p>Open-source web maps, with geocoding and directions, built on top of Mapbox APIs.</p>
     </div>
-    <div class='flex-child px12 mt36 align-center' style='max-width: 420px;'>
+    <div class='flex-child px12 mt36 align-center'>
       <a href='https://www.escapades.voyage'>
-        <img class='w-full' style='object-fit: cover;' src='static/escapades.png' />
+        <img class='w-full' src='static/escapades.png' />
       </a>
       <h3>Escapades</h3>
       <p>Our hiking blog, written in French.</p>
     </div>
-    <div class='flex-child px12 mt36 align-center' style='max-width: 420px;'>
+    <div class='flex-child px12 mt36 align-center'>
       <a href='https://www.mapbox.com/telemetry'>
-        <img class='w-full' style='object-fit: cover;' src='static/telemetry.png' />
+        <img class='w-full' src='static/telemetry.png' />
       </a>
       <h3>Telemetry</h3>
       <p>Building trajectory maps and other derived products from anonymous location data.</p>
